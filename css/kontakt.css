@@ -1,0 +1,24 @@
+input, textarea {
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-top: 30px;
+    width: 40%;
+    float: right;
+}
+
+.dane_biuro {
+    margin-top: 10px;
+}
+
+.dane_serwis {
+    margin-top: 10px;
+    margin-bottom: 210px;
+}
+
+h3 {
+    margin-top: 30px;
+}

@@ -4,22 +4,65 @@
     <title>Kontakt</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="css/kontakt.css">   
+    <link rel="stylesheet" type="text/css" href="css/kontakt.css">  
+    <link rel="stylesheet" type="text/css" href="css/index.css"> 
     </head>
     <body>
-        <form action="kontakt_form.html" method="GET">
-            <fieldset>
-                <legend>
-                    Formularz kontaktowy:
-                </legend>
-                <label>
-                    Imię:
-                    <input type="text" name="name" size="30" maxlength="100">
-                </label>
-                <label>
-                    <input type="submit" value="Prześlij">
-                </label>
-            </fieldset>
-        </form>
+            <div id="page">
+                <header>MAD-TECH Damian Skierski</header>
+                <nav>
+                    <a href="index.html">Strona główna</a>
+                    <a href="usługi.html">Usługi</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </nav>
+            <form action="kontakt_form.html" method="GET">
+                <fieldset>
+                    <legend>
+                        Formularz kontaktowy:
+                    </legend>
+                    <label>
+                        Imię i nazwisko (wymagane):<br />
+                        <input type="text" name="name" maxlength="50" required="required">
+                    </label><br />
+                    <label>
+                        Adres email (wymagane):<br />
+                        <input type="email" name="email" maxlength="40" required="required">
+                    </label><br />
+                    <label>
+                        Telefon komórkowy:<br />
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{9}">
+                    </label><br />
+                    <label>
+                        Firma:<br />
+                        <input type="text" name="firma" maxlength="70">
+                    </label><br />
+                    <label>
+                        Temat:<br />
+                        <input type="text" name="temat" maxlength="100">
+                    </label><br />
+                    <label>Treść:<br />
+                        <textarea name="treść" cols="60" rows="8">W czym możemy pomóc ?</textarea>
+                    </label><br />
+                    <label>
+                        <input type="submit" value="Prześlij">
+                    </label>
+                </fieldset>
+            </form>
+            <h3>Biuro:</h3>
+            <p class="dane_biuro">MAD-TECH Damian Skierski<br/>
+                ul. Cedrowa 41/67<br/>
+                80-126 Gdańsk<br/>
+                tel. 731-379-239<br/>
+                <a href="mailto:dskierski@gmail.com">dskierski@gmail.com</a>
+            </p>
+            <h3>Serwis:</h3>
+            <p class="dane_serwis">Damian Skierski<br/>
+            tel. 731-379-239<br/>
+            <a href="mailto:dskierski@gmail.com">dskierski@gmail.com</a>
+            </p>
+            <p class="foot">
+                &#174; Mad-Tech Damian Skierski
+            </p>
+            </div>
     </body>
 </html>
